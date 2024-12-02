@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Ticketing Web</title>
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 flex flex-col items-center">
+  <!-- Header Section -->
+  <header class="px-2.5 py-2.5 m-8 bg-white rounded-lg w-10/12 "> <!-- 10px margin -->
+    <!-- Navbar -->
+    <nav class="py-4 px-4 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <h1 class="text-2xl font-bold text-green-500">E-Ticketing</h1>
+        <a href="#" class="text-gray-600 hover:text-green-500">Home</a>
+        <a href="#" class="text-gray-600 hover:text-green-500">Destination</a>
+        <a href="#" class="text-gray-600 hover:text-green-500">Search</a>
+      </div>
+      <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Bus</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="border">
+      <div class="relative bg-cover bg-center h-96 rounded-lg overflow-hidden" style="background-image: url('images/banner.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-center">
+          <h2 class="text-4xl font-bold text-white mb-2">Book Your Journey</h2>
+          <p class="text-lg text-gray-200 mb-4">Convenient and affordable ticketing at your fingertips.</p>
+          <button class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600">Buy Ticket</button>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="absolute bottom-0 bg-gray-100 py-6 px-4 grid grid-cols-3 gap-4 text-center rounded-lg mt-4 border">
+          <div>
+            <h3 class="text-2xl font-bold text-green-500">500+</h3>
+            <p class="text-gray-600">Registered Users</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-green-500">1200+</h3>
+            <p class="text-gray-600">Tickets Sold</p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-green-500">50+</h3>
+            <p class="text-gray-600">Rental Partners</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Best Offer Section -->
+    <div class="py-8 px-4">
+      <h3 class="text-xl font-bold text-gray-700 mb-4">Best Offers</h3>
+      <div class="grid grid-cols-2 gap-4">
+        <!-- Coupon 1 -->
+        <div class="border border-gray-200 rounded p-4 flex justify-between items-center">
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-green-500">30% OFF</h4>
+          </div>
+          <div>
+            <p class="text-gray-600">Code: <span class="font-bold text-green-500">SAVE30</span></p>
+          </div>
+        </div>
+        <!-- Coupon 2 -->
+        <div class="border border-gray-200 rounded p-4 flex justify-between items-center">
+          <div class="text-center">
+            <h4 class="text-2xl font-bold text-green-500">20% OFF</h4>
+          </div>
+          <div>
+            <p class="text-gray-600">Code: <span class="font-bold text-green-500">GET20</span></p>
+          </div>
+        </div>
+      </div>
+      <button class="mt-4 bg-white text-green-500 px-6 py-2 rounded-lg border border-green-500 hover:bg-green-600 hover:text-white">See All Offers</button>
+    </div>
+  </header>
+
+
+  <!-- main section  -->
+  <main class="px-2.5 py-4 bg-gray-50 flex flex-col items-center">
+    <!-- Main Section Heading and Paragraph -->
+    <section class="mb-6 text-center">
+      <h2 class="text-3xl font-bold text-green-500 mb-2">Bus Transport Details</h2>
+      <p class="text-gray-700">Find the best bus services with all the details you need for a comfortable journey.</p>
+    </section>
+  
+    <!-- Bus Transport Details Section -->
+    <section class="grid grid-cols-10 bg-white shadow-md rounded-xl p-4 w-10/12">
+      <!-- Bus Details -->
+      <div id="bus-details" class="col-span-7 flex flex-col justify-between  gap-4  p-6">
+        <!-- Bus Name and Seat -->
+        <div id="bus-name-and-seat" class="flex justify-between items-center space-x-4 ">
+          <!-- Bus Logo -->
+          <div class="flex items-center gap-4">
+            <img src="images/bus-logo.png" alt="Bus Logo" class="">
+            <div>
+              <h3 class="text-xl font-bold text-green-500">Green Express</h3>
+              <p>Coach-009-WEB ! AC_Business</p>
+            </div>
+          </div>
+          
+          <!-- Bus Name and Seat Availability -->
+          <div class="text-sm text-green-500 bg-green-100 px-2 py-1 rounded-lg mt-1 flex items-center gap-2">
+            <img src="images/seat-green.png" alt="">
+            <span>40</span><span>Seats left</span>
+          </div>
+        </div>
+  
+        <!-- Transport Details -->
+        <div id="transport-details" class="flex flex-col space-y-2 text-sm bg-gray-100 rounded-xl pb-3">
+          <!-- Route and Departure -->
+          <div class="px-4 py-2 rounded">
+            <p class=" flex justify-between py-4"><span><strong>Route</strong></span> <span>Dhaka → Chittagong</span></p>
+            <div class="w-full border border-dashed border-gray-300"></div>
+            <p class="flex justify-between pt-4"><span><strong>Departure</strong></span> <span> 8:00 AM</span></p>
+          </div>
+          <div class="mx-4 my-2 border border-dashed border-gray-300"></div>
+          <!-- Boarding and Dropping -->
+          <div class=" px-4 pt-4 pb-2 rounded flex justify-between">
+            <p class="bg-gray-300 text-gray-600  rounded-lg py-2 px-6"><strong>Boarding:</strong> Motijheel</p>
+            <p class="bg-gray-300 text-gray-600  rounded-lg py-2 px-6"><strong>Dropping:</strong> Agrabad</p>
+            <p class="bg-gray-300 text-gray-600  rounded-lg py-2 px-6"><strong>Estimated Time:</strong> 6 Hours</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- line -->
+      <div class="col-span-1 h-full w-0 border border-dashed border-green-500"></div>
+
+
+
+      <!-- Ticket Price -->
+      <div id="ticket-price" class=" bg-gray-50 px-4 py-2 rounded  flex flex-col justify-center items-center border">
+        <h2 class="text-3xl font-bold text-white w-14 h-14 rounded-full bg-green-500 text-center pt-2">৳</h2>
+        <h3 class="text-2xl font-bold text-black flex items-center">
+          500 TAKA
+        </h3>
+        <p class="text-gray-500 text-semibold">Per Seat</p>
+      </div>
+    </section>
+
+
+    <!-- Seat selection section -->
+    <section id="select-seat" class="bg-white shadow-md rounded-lg p-4 my-6 w-10/12">
+      <!-- Section Padding -->
+      <div class="p-4">
+        <h2 class="text-3xl font-bold text-green-500 mb-4">Select Seat</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Selecting Seat Section -->
+          <div id="selecting-seat">
+            <!-- Availability -->
+            <div id="availability" class="mb-4">
+              <p class="text-gray-600">Available: <span class="text-gray-800">50</span></p>
+              <p class="text-green-500 font-bold">Selected: 5</p>
+            </div>
+            <!-- Seat Grid -->
+            <div id="seat-grid" class="grid grid-cols-5 gap-2">
+              <!-- A -->
+              <button class="btn btn-outline bg-gray-200">A</button>
+              <button class="btn btn-outline bg-gray-200">A1</button>
+              <button class="btn btn-outline bg-gray-200">A2</button>
+              <button class="btn btn-outline bg-gray-200">A3</button>
+              <button class="btn btn-outline bg-gray-200">A4</button>
+
+              <!-- B -->
+              <button class="btn btn-outline bg-gray-200">B</button>
+              <button class="btn btn-outline bg-gray-200">B1</button>
+              <button class="btn btn-outline bg-gray-200">B2</button>
+              <button class="btn btn-outline bg-gray-200">B3</button>
+              <button class="btn btn-outline bg-gray-200">B4</button>
+
+              <!-- C -->
+              <button class="btn btn-outline bg-gray-200">C</button>
+              <button class="btn btn-outline bg-gray-200">C1</button>
+              <button class="btn btn-outline bg-gray-200">C2</button>
+              <button class="btn btn-outline bg-gray-200">C3</button>
+              <button class="btn btn-outline bg-gray-200">C4</button>
+
+              <!-- D -->
+              <button class="btn btn-outline bg-gray-200">D</button>
+              <button class="btn btn-outline bg-gray-200">D1</button>
+              <button class="btn btn-outline bg-gray-200">D2</button>
+              <button class="btn btn-outline bg-gray-200">D3</button>
+              <button class="btn btn-outline bg-gray-200">D4</button>
+
+              <!-- E -->
+              <button class="btn btn-outline bg-gray-200">E</button>
+              <button class="btn btn-outline bg-gray-200">E1</button>
+              <button class="btn btn-outline bg-gray-200">E2</button>
+              <button class="btn btn-outline bg-gray-200">E3</button>
+              <button class="btn btn-outline bg-gray-200">E4</button>
+
+              <!-- F -->
+              <button class="btn btn-outline bg-gray-200">F</button>
+              <button class="btn btn-outline bg-gray-200">F1</button>
+              <button class="btn btn-outline bg-gray-200">F2</button>
+              <button class="btn btn-outline bg-gray-200">F3</button>
+              <button class="btn btn-outline bg-gray-200">F4</button>
+
+              <!-- G -->
+              <button class="btn btn-outline bg-gray-200">G</button>
+              <button class="btn btn-outline bg-gray-200">G1</button>
+              <button class="btn btn-outline bg-gray-200">G2</button>
+              <button class="btn btn-outline bg-gray-200">G3</button>
+              <button class="btn btn-outline bg-gray-200">G4</button>
+
+              <!-- H -->
+              <button class="btn btn-outline bg-gray-200">H</button>
+              <button class="btn btn-outline bg-gray-200">H1</button>
+              <button class="btn btn-outline bg-gray-200">H2</button>
+              <button class="btn btn-outline bg-gray-200">H3</button>
+              <button class="btn btn-outline bg-gray-200">H4</button>
+
+              <!-- I -->
+              <button class="btn btn-outline bg-gray-200">I</button>
+              <button class="btn btn-outline bg-gray-200">I1</button>
+              <button class="btn btn-outline bg-gray-200">I2</button>
+              <button class="btn btn-outline bg-gray-200">I3</button>
+              <button class="btn btn-outline bg-gray-200">I4</button>
+
+              <!-- J -->
+              <button class="btn btn-outline bg-gray-200">J</button>
+              <button class="btn btn-outline bg-gray-200">J1</button>
+              <button class="btn btn-outline bg-gray-200">J2</button>
+              <button class="btn btn-outline bg-gray-200">J3</button>
+              <button class="btn btn-outline bg-gray-200">J4</button>
+              
+            </div>
+          </div>
+    
+          <!-- Total Price According to Seats -->
+          <div id="total-price-according-to-seats">
+            <!-- Total Seats and Price -->
+            <div id="total-seats-price" class="mb-6">
+              <table class="w-full border-collapse border border-gray-200 mb-4">
+                <thead>
+                  <tr>
+                    <th class="border border-gray-200 px-4 py-2">Seat</th>
+                    <th class="border border-gray-200 px-4 py-2">Class</th>
+                    <th class="border border-gray-200 px-4 py-2">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border border-gray-200 px-4 py-2">A1</td>
+                    <td class="border border-gray-200 px-4 py-2">Economy</td>
+                    <td class="border border-gray-200 px-4 py-2">৳ 500</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-200 px-4 py-2">A2</td>
+                    <td class="border border-gray-200 px-4 py-2">Economy</td>
+                    <td class="border border-gray-200 px-4 py-2">৳ 500</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-right text-gray-800 font-bold mb-4">Total Price: ৳ 1000</p>
+              <div class="flex items-center space-x-2">
+                <input
+                  type="text"
+                  placeholder="Coupon Code"
+                  class="w-full px-4 py-2 border border-gray-300 rounded"
+                />
+                <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                  Apply
+                </button>
+              </div>
+              <p class="text-right text-gray-800 font-bold mt-4">Grand Total: ৳ 800</p>
+            </div>
+    
+            <!-- Passenger Details -->
+            <div id="passenger-details" class="mt-6">
+              <form class="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Passenger Name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded"
+                />
+                <input
+                  type="text"
+                  placeholder="Passenger Number"
+                  class="w-full px-4 py-2 border border-gray-300 rounded"
+                />
+                <input
+                  type="email"
+                  placeholder="Passenger Email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded"
+                />
+                <button class="w-full bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600">
+                  Next
+                </button>
+              </form>
+              <div class="mt-4 text-sm">
+                <a href="#" class="text-gray-600 hover:text-green-500">Terms and Privacy</a> | 
+                <a href="#" class="text-gray-600 hover:text-green-500">Cancellation Process</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+</body>
+</html>
