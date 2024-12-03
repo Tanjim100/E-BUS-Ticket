@@ -117,25 +117,25 @@
 
 
   <!-- main section  -->
-  <main class="px-2.5 py-4 bg-gray-50 flex flex-col items-center border border-[#1DD100]"
+  <main class="px-2.5 py-4 bg-[#F7F8F8] flex flex-col items-center border border-[#1DD100]"
   style="border-top-left-radius: 80px; border-top-right-radius: 80px;">
     <!-- Main Section Heading and Paragraph -->
-    <section class="mb-6 text-center mt-20">
-      <h2 class="text-3xl font-bold text-green-500 mb-2">Bus Transport Details</h2>
-      <p class="text-gray-700">Find the best bus services with all the details you need for a comfortable journey.</p>
+    <section class="mb-16 text-center mt-20 flex flex-col items-center">
+      <h2 class="text-3xl font-bold text-[#030712] mb-2">T.H Paribahan</h2>
+      <p class="text-[#03071299] w-4/5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
     </section>
   
     <!-- Bus Transport Details Section -->
-    <section class="grid grid-cols-10 bg-white shadow-md rounded-xl p-4 w-10/12">
+    <section class="grid grid-cols-10 bg-white  rounded-2xl w-10/12 border border-[#F7F8F8]">
       <!-- Bus Details -->
-      <div id="bus-details" class="col-span-7 flex flex-col justify-between  gap-4  p-6">
+      <div id="bus-details" class="col-span-7 flex flex-col justify-around  gap-4  p-10">
         <!-- Bus Name and Seat -->
-        <div id="bus-name-and-seat" class="flex justify-between items-center space-x-4 ">
+        <div id="bus-name-and-seat" class="flex justify-between items-center space-x-4">
           <!-- Bus Logo -->
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 ">
             <img src="images/bus-logo.png" alt="Bus Logo" class="">
             <div>
-              <h3 class="text-xl font-bold text-green-500">Green Express</h3>
+              <h3 class="text-2xl font-bold text-[#1DD100]">Green Express</h3>
               <p>Coach-009-WEB ! AC_Business</p>
             </div>
           </div>
@@ -148,7 +148,7 @@
         </div>
   
         <!-- Transport Details -->
-        <div id="transport-details" class="flex flex-col space-y-2 text-sm bg-gray-100 rounded-xl pb-3">
+        <div id="transport-details" class="flex flex-col space-y-2 text-base bg-gray-100 rounded-xl pb-4 p-6">
           <!-- Route and Departure -->
           <div class="px-4 py-2 rounded">
             <p class=" flex justify-between py-4"><span><strong>Route</strong></span> <span>Dhaka → Chittagong</span></p>
@@ -166,14 +166,16 @@
       </div>
 
       <!-- line -->
-      <div class="col-span-1 h-full w-0 border border-dashed border-green-500"></div>
+      <div class="">
+        <img class="" src="images/info-devider.png" alt="">
+      </div>
 
 
 
       <!-- Ticket Price -->
-      <div id="ticket-price" class=" bg-gray-50 px-4 py-2 rounded  flex flex-col justify-center items-center border">
-        <h2 class="text-3xl font-bold text-white w-14 h-14 rounded-full bg-green-500 text-center pt-2">৳</h2>
-        <h3 class="text-2xl font-bold text-black flex items-center">
+      <div id="ticket-price" class=" py-2 rounded  flex flex-col justify-center items-center text-center">
+        <h2 class="text-3xl font-bold text-white w-14 h-14 rounded-full bg-[#1DD100] pt-2">৳</h2>
+        <h3 class="text-2xl font-bold text-[#030712] ">
           500 TAKA
         </h3>
         <p class="text-gray-500 text-semibold">Per Seat</p>
@@ -331,7 +333,7 @@
                 </button>
               </form>
               <div class="mt-4 text-sm">
-                <a href="#" class="text-gray-600 hover:text-green-500">Terms and Privacy</a> | 
+                <a href="#" class="text-gray-600 hover:text-green-500">Terms and Conditions</a> | 
                 <a href="#" class="text-gray-600 hover:text-green-500">Cancellation Process</a>
               </div>
             </div>
@@ -341,5 +343,46 @@
     </section>
     
   </main>
+
+
+  <!-- footer section  -->
+  <footer class="bg-gray-900 text-white py-8">
+    <!-- About Section -->
+    <div id="about" class="flex flex-col md:flex-row justify-between items-start px-6">
+      <!-- About Website -->
+      <div id="about-website" class="mb-6 md:mb-0">
+        <h4 class="text-lg font-bold mb-2">About Our Website</h4>
+        <p class="text-gray-300 text-sm">
+          We provide the best e-ticketing services for your convenience. Book your tickets effortlessly and enjoy a smooth journey.
+        </p>
+      </div>
+      <!-- Play Store -->
+      <div id="play-store" class="flex flex-col items-start">
+        <p class="text-gray-300 text-sm mb-2">Download our app on:</p>
+        <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+          <img
+            src="images/play-store-badge.png"
+            alt="Google Play Store"
+            class="w-32"
+          />
+        </a>
+      </div>
+    </div>
+  
+    <!-- Copy-Right Section -->
+    <div id="copy-right" class="mt-8 border-t border-gray-700 pt-4 px-6 flex flex-col md:flex-row justify-between items-center">
+      <!-- Main Copy-Right -->
+      <div id="main-copy-right" class="text-gray-400 text-sm mb-4 md:mb-0">
+        &copy; 2024 E-Ticketing Platform. All Rights Reserved.
+      </div>
+      <!-- Privacy Policy Links -->
+      <div id="privacy-policy" class="flex space-x-4">
+        <a href="#" class="text-gray-300 text-sm hover:text-green-500">Privacy Policy</a>
+        <a href="#" class="text-gray-300 text-sm hover:text-green-500">Terms of Service</a>
+        <a href="#" class="text-gray-300 text-sm hover:text-green-500">Refund Policy</a>
+      </div>
+    </div>
+  </footer>
+  
 </body>
 </html>
