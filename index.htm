@@ -117,10 +117,10 @@
 
 
   <!-- main section  -->
-  <main class="px-2.5 py-4 bg-[#F7F8F8] flex flex-col items-center border border-[#1DD100]"
+  <main class="px-2.5 py-4 bg-[#F7F8F8] flex flex-col items-center border-t-2 border-[#1DD100] w-full"
   style="border-top-left-radius: 80px; border-top-right-radius: 80px;">
     <!-- Main Section Heading and Paragraph -->
-    <section class="mb-16 text-center mt-20 flex flex-col items-center">
+    <section class="mb-16 text-center mt-20 flex flex-col items-center ">
       <h2 class="text-3xl font-bold text-[#030712] mb-4">T.H Paribahan</h2>
       <p class="text-[#03071299] w-4/5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
     </section>
@@ -184,165 +184,197 @@
 
 
     <!-- Seat selection section -->
-    <section id="select-seat" class="bg-white shadow-md rounded-lg p-4 my-6 w-10/12">
+    <section id="select-seat" class="bg-white shadow-md rounded-2xl p-4 my-6 w-10/12 mb-20">
       <!-- Section Padding -->
       <div class="p-4">
-        <div class="grid grid-cols-2 gap-4">
+        <div class="flex">
           <!-- Selecting Seat Section -->
-          <div id="selecting-seat">
-            <h2 class="text-2xl  text-[#030712] mb-2 px-2">Select Your Seat</h2>
+          <div id="selecting-seat" class="w-1/2">
+            <h2 class="text-2xl  text-[#030712] mb-4 px-2">Select Your Seat</h2>
             <div class="w-full border border-dashed border-gray-300"></div>
             <!-- Availability -->
             <div id="availability" class="flex justify-between px-2 py-4">
-              <div class="flex">
+              <div class="flex gap-2">
                 <img class="w-7 h-7" src="images/seat-gray.png" alt="">
-                <p class="text-gray-600">Available: <span class="text-gray-800">50</span></p>
+                <p class="text-gray-600">Available</p>
               </div>
-              <div class="flex">
+              <div class="flex gap-2">
                 <img class="w-7 h-7" src="images/seat-green-filled.png" alt="">
-                <p class="text-green-500 font-bold">Selected: 5</p>
+                <p class="text-[#1DD100]">Selected</p>
               </div>
             </div>
             <div class="w-full border border-dashed border-gray-300"></div>
+            <div class="flex flex-row-reverse px-10 py-4">
+              <div class="w-24 h-12 bg-gray-200 rounded-lg flex justify-center items-center">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333" stroke="#030712" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+              </div>
+            </div>
             <!-- Seat Grid -->
-            <div id="seat-grid" class="grid grid-cols-5 gap-2">
+            <div id="seat-grid" class="flex gap-8 p-2">
               <!-- A -->
-              <button class="btn btn-outline bg-gray-200">A</button>
-              <button class="btn btn-outline bg-gray-200">A1</button>
-              <button class="btn btn-outline bg-gray-200">A2</button>
-              <button class="btn btn-outline bg-gray-200">A3</button>
-              <button class="btn btn-outline bg-gray-200">A4</button>
+              <div class="grid grid-cols-1 gap-y-4 text-[#03071280]">
+                <div class="flex justify-center items-center w-6 h-12">A</div>
+                <div class="flex justify-center items-center w-6 h-12">B</div>
+                <div class="flex justify-center items-center w-6 h-12">C</div>
+                <div class="flex justify-center items-center w-6 h-12">D</div>
+                <div class="flex justify-center items-center w-6 h-12">E</div>
+                <div class="flex justify-center items-center w-6 h-12">F</div>
+                <div class="flex justify-center items-center w-6 h-12">G</div>
+                <div class="flex justify-center items-center w-6 h-12">H</div>
+                <div class="flex justify-center items-center w-6 h-12">I</div>
+                <div class="flex justify-center items-center w-6 h-12">J</div>
 
-              <!-- B -->
-              <button class="btn btn-outline bg-gray-200">B</button>
-              <button class="btn btn-outline bg-gray-200">B1</button>
-              <button class="btn btn-outline bg-gray-200">B2</button>
-              <button class="btn btn-outline bg-gray-200">B3</button>
-              <button class="btn btn-outline bg-gray-200">B4</button>
+                
+              </div>
 
-              <!-- C -->
-              <button class="btn btn-outline bg-gray-200">C</button>
-              <button class="btn btn-outline bg-gray-200">C1</button>
-              <button class="btn btn-outline bg-gray-200">C2</button>
-              <button class="btn btn-outline bg-gray-200">C3</button>
-              <button class="btn btn-outline bg-gray-200">C4</button>
+              <div class="grid grid-cols-2 gap-4 mr-16 ">
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280] w-20 h-12 ">A1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280] w-20 h-12 ">A2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">B1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">B2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">C1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">C2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">D1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">D2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">D1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">D2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">E1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">E2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">F1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">F2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">G1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">G2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">I1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">I2</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">I1</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">I2</button>
 
-              <!-- D -->
-              <button class="btn btn-outline bg-gray-200">D</button>
-              <button class="btn btn-outline bg-gray-200">D1</button>
-              <button class="btn btn-outline bg-gray-200">D2</button>
-              <button class="btn btn-outline bg-gray-200">D3</button>
-              <button class="btn btn-outline bg-gray-200">D4</button>
+              </div>
 
-              <!-- E -->
-              <button class="btn btn-outline bg-gray-200">E</button>
-              <button class="btn btn-outline bg-gray-200">E1</button>
-              <button class="btn btn-outline bg-gray-200">E2</button>
-              <button class="btn btn-outline bg-gray-200">E3</button>
-              <button class="btn btn-outline bg-gray-200">E4</button>
+              <div class="grid grid-cols-2 gap-4 text-[#03071280]">
+                <button class="btn btn-outline w-20 h-12 bg-[#F7F8F8] text-[#03071280] border-none">A3</button>
+                <button class="btn btn-outline w-20 h-12 bg-[#F7F8F8] text-[#03071280] border-none">A4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">B3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">B4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">C3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">C4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">D3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">D4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">E3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">E4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">F3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">F4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">G3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">G4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">H3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">H4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">I3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">I4</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">J3</button>
+                <button class="btn btn-outline bg-[#F7F8F8] border-none text-[#03071280]">J4</button>
 
-              <!-- F -->
-              <button class="btn btn-outline bg-gray-200">F</button>
-              <button class="btn btn-outline bg-gray-200">F1</button>
-              <button class="btn btn-outline bg-gray-200">F2</button>
-              <button class="btn btn-outline bg-gray-200">F3</button>
-              <button class="btn btn-outline bg-gray-200">F4</button>
-
-              <!-- G -->
-              <button class="btn btn-outline bg-gray-200">G</button>
-              <button class="btn btn-outline bg-gray-200">G1</button>
-              <button class="btn btn-outline bg-gray-200">G2</button>
-              <button class="btn btn-outline bg-gray-200">G3</button>
-              <button class="btn btn-outline bg-gray-200">G4</button>
-
-              <!-- H -->
-              <button class="btn btn-outline bg-gray-200">H</button>
-              <button class="btn btn-outline bg-gray-200">H1</button>
-              <button class="btn btn-outline bg-gray-200">H2</button>
-              <button class="btn btn-outline bg-gray-200">H3</button>
-              <button class="btn btn-outline bg-gray-200">H4</button>
-
-              <!-- I -->
-              <button class="btn btn-outline bg-gray-200">I</button>
-              <button class="btn btn-outline bg-gray-200">I1</button>
-              <button class="btn btn-outline bg-gray-200">I2</button>
-              <button class="btn btn-outline bg-gray-200">I3</button>
-              <button class="btn btn-outline bg-gray-200">I4</button>
-
-              <!-- J -->
-              <button class="btn btn-outline bg-gray-200">J</button>
-              <button class="btn btn-outline bg-gray-200">J1</button>
-              <button class="btn btn-outline bg-gray-200">J2</button>
-              <button class="btn btn-outline bg-gray-200">J3</button>
-              <button class="btn btn-outline bg-gray-200">J4</button>
+              </div>
               
+
+            
             </div>
           </div>
+
+          <div id="select-seat-line" class="border border-dashed border-[#0307124D] mx-6 col-span-1 min-h-full w-0"></div>
     
           <!-- Total Price According to Seats -->
-          <div id="total-price-according-to-seats">
+          <div id="total-price-according-to-seats" class="pl-4  w-1/2">
+            <h2 class="text-2xl  text-[#030712] mb-4 px-2">Select Your Seat</h2>
+            <div class="w-full border border-dashed border-gray-300"></div>
+
             <!-- Total Seats and Price -->
-            <div id="total-seats-price" class="mb-6">
-              <table class="w-full border-collapse border border-gray-200 mb-4">
-                <thead>
-                  <tr>
-                    <th class="border border-gray-200 px-4 py-2">Seat</th>
-                    <th class="border border-gray-200 px-4 py-2">Class</th>
-                    <th class="border border-gray-200 px-4 py-2">Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="border border-gray-200 px-4 py-2">A1</td>
-                    <td class="border border-gray-200 px-4 py-2">Economy</td>
-                    <td class="border border-gray-200 px-4 py-2">৳ 500</td>
-                  </tr>
-                  <tr>
-                    <td class="border border-gray-200 px-4 py-2">A2</td>
-                    <td class="border border-gray-200 px-4 py-2">Economy</td>
-                    <td class="border border-gray-200 px-4 py-2">৳ 500</td>
-                  </tr>
-                </tbody>
-              </table>
-              <p class="text-right text-gray-800 font-bold mb-4">Total Price: ৳ 1000</p>
-              <div class="flex items-center space-x-2">
+            <div id="total-seats-price" class="mb-6 mt-4 bg-[#F7F8F8] rounded-xl p-4">
+              <div class="flex justify-between p-2">
+                <div class="flex items-center gap-1">
+                  <p>Seat</p>
+                  <div class="w-6 h-6 bg-[#1DD100] text-center rounded">
+                    <span class="text-white">2</span>
+                  </div>
+                </div>
+                <p class="pr-16">Class</p>
+                <p>Price</p>
+              </div>
+              <!-- line -->
+              <div class="w-full border border-dashed border-gray-300"></div>
+              <!-- seat 1 -->
+              <div class="flex justify-between p-2">
+                <p>C1</p>
+                <p>Economy</p>
+                <span>500</span>
+              </div>
+              <!-- seat 2 -->
+              <div class="flex justify-between p-2">
+                <p>C2</p>
+                <p>Economy</p>
+                <span>500</span>
+              </div>
+              <!-- line -->
+              <div class="w-full border border-gray-300"></div>
+
+              <div class="flex justify-between p-2">
+                <p class="text-right text-gray-800 font-bold mb-4">Total Price</p>
+                <p class="text-right text-gray-800 font-bold mb-4">BDT <span>1000</span></p>
+              </div>
+              <div class="flex items-center space-x-2 bg-white p-2 rounded-lg">
                 <input
                   type="text"
                   placeholder="Coupon Code"
-                  class="w-full px-4 py-2 border border-gray-300 rounded"
+                  class="w-full px-4 py-2  rounded-lg bg-white"
                 />
-                <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">
+                <button class="bg-[#1DD100] text-white px-4 py-2 rounded-lg hover:bg-green-600">
                   Apply
                 </button>
               </div>
-              <p class="text-right text-gray-800 font-bold mt-4">Grand Total: ৳ 800</p>
+              <div class="flex justify-between p-2">
+                <p class="text-right text-gray-800 font-bold mt-4">Grand Total</p>
+                <p class="text-right text-gray-800 font-bold mt-4">BDT <span>800</span></p>
+              </div>
             </div>
     
             <!-- Passenger Details -->
-            <div id="passenger-details" class="mt-6">
+            <div id="passenger-details" class="mt-4 p-2">
               <form class="space-y-4">
-                <input
-                  type="text"
-                  placeholder="Passenger Name"
-                  class="w-full px-4 py-2 border border-gray-300 rounded"
-                />
-                <input
-                  type="text"
-                  placeholder="Passenger Number"
-                  class="w-full px-4 py-2 border border-gray-300 rounded"
-                />
-                <input
-                  type="email"
-                  placeholder="Passenger Email"
-                  class="w-full px-4 py-2 border border-gray-300 rounded"
-                />
-                <button class="w-full bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600">
+                <div>
+                  <h3 class="font-semibold py-2">Passenger Name*</h3>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <h3 class="font-semibold py-2">Phone Number*</h3>
+                  <input
+                    type="text"
+                    placeholder="Enter your phone number"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm"
+                    required
+                  />
+                </div>
+                <div>
+                  <h3 class="font-semibold py-2">Email ID</h3>
+                  <input
+                    type="email"
+                    placeholder="Enter your email id"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white text-sm"
+                  />
+                </div>
+                <button class="w-full bg-[#1DD100] text-white px-6 py-3 rounded hover:bg-green-600">
                   Next
                 </button>
               </form>
-              <div class="mt-4 text-sm">
-                <a href="#" class="text-gray-600 hover:text-green-500">Terms and Conditions</a> | 
-                <a href="#" class="text-gray-600 hover:text-green-500">Cancellation Process</a>
+              <div class="mt-4 text-sm flex justify-between px-8 py-2">
+                <a href="#" class="text-[#03071299] hover:text-green-500 underline">Terms and Conditions</a>
+                <a href="#" class="text-[#03071299] hover:text-green-500 underline">Cancellation Policy</a>
               </div>
             </div>
           </div>
@@ -354,41 +386,49 @@
 
 
   <!-- footer section  -->
-  <footer class="bg-gray-900 text-white py-8">
-    <!-- About Section -->
-    <div id="about" class="flex flex-col md:flex-row justify-between items-start px-6">
+  <footer class="bg-[#030712] w-full text-white py-24 flex justify-center">
+    <div class="w-10/12">
+      <!-- About Section -->
+    <div id="about" class="flex flex-col md:flex-row justify-between items-start">
       <!-- About Website -->
-      <div id="about-website" class="mb-6 md:mb-0">
-        <h4 class="text-lg font-bold mb-2">About Our Website</h4>
-        <p class="text-gray-300 text-sm">
-          We provide the best e-ticketing services for your convenience. Book your tickets effortlessly and enjoy a smooth journey.
+      <div id="about-website" class="mb-6 md:mb-0  w-4/12">
+        <h4 class="text-3xl font-bold mb-2">P-Ticket</h4>
+        <p class="text-gray-300 ">
+          P-Ticket is a digital platform to make your daily commuting better.
         </p>
       </div>
       <!-- Play Store -->
-      <div id="play-store" class="flex flex-col items-start">
-        <p class="text-gray-300 text-sm mb-2">Download our app on:</p>
+      <div id="play-store" class="flex flex-col items-center">
+        <p class="text-white text-sm mb-2">Download our app on:</p>
         <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
-          <img
-            src="images/play-store-badge.png"
-            alt="Google Play Store"
-            class="w-32"
-          />
+          <div class="flex gap-2 border p-2 rounded-lg">
+            <img
+              src="images/playstore.png"
+              alt="Google Play Store"
+              class="w-10 h-10"
+            />
+            <div>
+              <p class="text-xs uppercase">get it on</p>
+              <h3 class="text-lg">Google Play</h3>
+            </div>
+          </div>
         </a>
       </div>
     </div>
   
     <!-- Copy-Right Section -->
-    <div id="copy-right" class="mt-8 border-t border-gray-700 pt-4 px-6 flex flex-col md:flex-row justify-between items-center">
+    <div id="copy-right" class="mt-8 border-t border-dashed border-gray-700 py-8 flex flex-col md:flex-row justify-between items-center">
       <!-- Main Copy-Right -->
-      <div id="main-copy-right" class="text-gray-400 text-sm mb-4 md:mb-0">
-        &copy; 2024 E-Ticketing Platform. All Rights Reserved.
+      <div id="main-copy-right" class="text-gray-400 text-sm mb-4 md:mb-0 border">
+        &copy; all rights reserved, P-Ticket services limited.2024
       </div>
       <!-- Privacy Policy Links -->
-      <div id="privacy-policy" class="flex space-x-4">
-        <a href="#" class="text-gray-300 text-sm hover:text-green-500">Privacy Policy</a>
-        <a href="#" class="text-gray-300 text-sm hover:text-green-500">Terms of Service</a>
-        <a href="#" class="text-gray-300 text-sm hover:text-green-500">Refund Policy</a>
+      <div id="privacy-policy" class="flex space-x-8">
+        <a href="#" class="text-white text-sm hover:text-green-500">Terms of conditions</a>
+        <a href="#" class="text-white text-sm hover:text-green-500">Return & refund policy</a>
+        <a href="#" class="text-white text-sm hover:text-green-500">Privacy Policy</a>
       </div>
+    </div>
     </div>
   </footer>
   
